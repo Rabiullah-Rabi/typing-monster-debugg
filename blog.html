@@ -21,7 +21,56 @@
         </div>
     </div>
 
+    <div class="box-container">
+        <div class="qus-wrapper">
+            <h3 class="blog-qus">Difference between local storage and session storage</h3>
+            <p class="answer"><b>Local storage : </b> Local storage is available in the browser to all windows with the
+                same domain. Data stored
+                in the local storage is also available after the window has been closed. The next time a window is
+                opened and loads the page from the same origin, the page can access the stored values there again.</p>
 
+            <p class="answer"><b>Session storage : </b>Session storage is available inside the same browser window for
+                as
+                long as the window is open. When the browser window is closed, the session storage associated with that
+                window is deleted. Multiple windows from the same origin (URL) cannot see each others session storage.
+            </p>
+        </div>
+
+        <!-- Qus 2 -->
+        <div class="qus-wrapper">
+            <h3 class="blog-qus">Difference between Global scope and Block scope</h3>
+            <p class="answer"><b>Global scope : </b> Any variable declared in global scope can be accessed anywhere.It
+                means that any code on our page has access to read and modify this variable. The way we make something
+                apply globally is by declaring it in our code completely outside of a function.</p>
+
+            <p class="answer"><b>Block scope : </b>A block scoped variable means that the variable defined within a
+                block will not be accessible from outside the block. A block can reside inside a function, and a block
+                scoped variable will not be available outside the block even if the block is inside a function.
+            </p>
+        </div>
+        <!-- Qus 3 -->
+        <div class="qus-wrapper">
+            <h3 class="blog-qus">Working Process of Event Loop</h3>
+            <p class="answer"><b>Event Loop : </b>The event loop is a process that waits for the Call Stack to be clear
+                before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop
+                triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call
+                Stack, waits for the Call Stack to be clear again, and repeats the same process.
+            </p>
+        </div>
+        <!-- Qus  4-->
+        <div class="qus-wrapper">
+            <h3 class="blog-qus">When we get "Undefined"</h3>
+            <p class="answer">An undefined variable or anything without a value will always return "undefined" in
+                JavaScript.
+                <br>
+                When a variable is declared or initialized but no value is assigned to it, JavaScript automatically
+                displays "undefined".
+                <br>
+                Also, when we try accessing values in, for example, an array or object that doesn`t exist, it will throw
+                undefined.
+            </p>
+        </div>
+    </div>
 
     <script src="./history.js"></script>
     <script src="./script.js"></script>
