@@ -82,7 +82,7 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <button onclick="closeModal()" id="close-btn">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
@@ -99,7 +99,6 @@ const closeModal = () => {
   resultModal.classList.toggle("hidden");
   loadData();
 };
-
 const start = () => {
   // If already started, do not start again
   if (startTime) return;
